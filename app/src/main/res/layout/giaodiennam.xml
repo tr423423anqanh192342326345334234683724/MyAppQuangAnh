@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiaodiennamActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anh"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <TextView
+        android:layout_width="253dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="104dp"
+        android:text="SET LOVE ♥"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="201dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="196dp"
+        android:text="Nhập Tên Bạn Nam"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tennam"
+        android:layout_width="198dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="28dp"
+        android:hint="nhập tên bạn nam"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+
+        android:layout_width="201dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="368dp"
+        android:text="Nhập Tuổi Bạn Nam"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tuoinam"
+        android:layout_width="198dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="100dp"
+        android:hint="nhập tuổi bạn nam"
+        app:layout_constraintEnd_toEndOf="@+id/tennam"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tennam"
+        app:layout_constraintTop_toBottomOf="@+id/tennam" />
+
+    <Button
+        android:id="@+id/ttnam"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="244dp"
+        android:text="tiếp tục"
+        android:textColor="#FFFF00"
+        app:layout_constraintStart_toStartOf="@+id/tennam"
+        app:layout_constraintTop_toBottomOf="@+id/tennam" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiaodienActivity">
+
+  <ImageView
+      android:id="@+id/imageView4"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:scaleType="centerCrop"
+      android:src="@drawable/anh"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0"
+      tools:layout_editor_absoluteX="0dp" />
+
+  <TextView
+      android:id="@+id/textView18"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Thiết lập thời gian cho tình yêu của bạn ♥"
+      android:textColor="#6A1616"
+      android:textSize="35sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.1" />
+
+  <EditText
+      android:id="@+id/editTextDate"
+      android:layout_width="347dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="304dp"
+      android:hint="Chọn ngày tháng năm"
+      android:inputType="date"
+      android:textAlignment="center"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/connect"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="72dp"
+      android:layout_marginBottom="300dp"
+      android:background="#6A1616"
+      android:text="Xong"
+      android:textColor="#FFFF00"
+      android:textSize="18sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/huy"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="96dp"
+      android:background="#6A1616"
+      android:text="Hủy"
+      android:textColor="#FFFF00"
+      android:textSize="18sp"
+      app:layout_constraintStart_toEndOf="@+id/connect"
+      app:layout_constraintTop_toTopOf="@+id/connect" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
